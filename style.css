@@ -1,0 +1,1177 @@
+/* external style sheet.. 
+     the website content is responsive based on device screen dimension
+     (mobile devices , desktop computers, tablet phones) 
+*/
+:root,:root::after,:root::before{
+       box-sizing: border-box;
+       scrollbar-width: none;
+}
+body{
+      background-color: rgb(0,0,0);
+      width: 100%;
+      color: rgb(215, 215, 250);
+       overflow-x: hidden;
+       font-family: Oswald,sans-serif;
+       /* hide side scroll bar icon from the page and keep functionality */
+/* for chrome , internet explorer edge and firefox */
+        -ms-overflow-style: none;
+        margin: 0;
+       padding: 0;
+}
+nav{
+     height: 50px;
+     width: 100%;
+     display: flex;
+     flex-wrap: nowrap;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     background: rgb(2, 116, 26);
+     position: fixed;
+     top: 0;
+     left: 0;
+     white-space: nowrap;
+     z-index: 5;
+}
+/* hide mobile nav bar in desktop view */
+.mobile-navbar{
+      display: none;
+}
+nav > div{
+   font-size: 25px;
+   display: flex;
+   align-items: center;
+}
+nav > div a{
+       font-size: 20px;
+       text-decoration: none;
+       color: rgb(214, 214, 252);
+       padding: 0 10px;
+       margin-right: 20px;
+       transition: color 1s;
+
+}
+nav > div a:hover{
+      color: rgb(5, 182, 20);
+}
+.fa-bars{
+              font-size: 30px;
+              color: rgb(230, 223, 223);
+              margin-left: 5px;
+              transition: opacity 0.5s;
+}
+.fa-bars:active{
+           opacity: 0.2;
+}
+.home{
+       border-radius: 5px;
+}
+.login{
+       margin-right: 60px;
+}
+input[type="search"]{
+          background: rgb(185, 186, 204);
+          padding: 6px;
+          border-radius: 2px;
+          margin-right: 30px;
+          color: rgb(0,0,0);
+           border: none;
+          outline: none;
+          font-size: 20px;
+          }
+.sidebar{
+         display: none;
+         height: 100vh;
+         width: 25%;
+         position: fixed;
+         top: 0;
+         left: 0;
+         background-color: rgb(70, 69, 69);
+         z-index: 99;
+         overflow-y: scroll;
+          overflow-x: hidden;
+         white-space: nowrap;
+         animation: slide 0.8s ; 
+}
+@keyframes slide {
+       from{width: 0%;}
+       to{width: 25%;}
+}
+.sidebar-header{
+      height: 200px;
+      background-color: rgb(50, 5, 141);
+      position: relative;
+      width: 100%;
+}
+.close{
+     position: absolute;
+     top: -10px;
+     right: 0;
+     font-size: 40px;
+     display: inline-block;
+     text-align: right;
+     padding-right: 10px;
+     color: rgb(248, 246, 246);
+     height: 40px;
+}
+.close:hover{
+       outline: none;
+       color: rgb(216, 11, 4);
+       cursor: pointer;
+}
+.fa-globe{
+         font-size: 100px;
+         display: block;
+         width: 100%;
+         text-align: center;
+         padding-top: 20px;
+         color: rgb(201, 193, 253);
+}
+.sidename{
+     font-size: 20px;
+     text-align: center;
+     font-style: italic;
+     color: rgb(201, 193, 253);
+}
+.categories{
+       margin-top: 50px;
+}
+.categories h1{
+     padding-left: 5px;
+}
+.categories ul{
+    list-style-type: none;
+    list-style-position: inside;
+    font-size: 18px;
+    line-height: 40px;
+}
+.categories ul > li{
+       letter-spacing: 1px;
+       font-weight: normal;
+       transition: color 0.5s;
+       cursor: pointer;
+}
+.categories ul > li:hover{
+       color: rgb(116, 116, 248);
+}
+.categories ul > li:active{
+       color: rgb(50, 245, 125);
+}
+.categories ul>li>span{
+      border-radius: 2px;
+}
+.American{
+    display: inline-block;
+    height: 17px;
+    width: 25px;
+    background-image: url(./worldMoviesImages/countriesFlag.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: -12px -80px;
+}
+.Indian{
+    display: inline-block;
+    height: 17px;
+    width: 25px;
+    background-image: url(./worldMoviesImages/countriesFlag.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: -119px -247px;
+}
+.Japanese{
+    display: inline-block;
+    height: 17px;
+    width: 25px;
+    background-image: url(./worldMoviesImages/countriesFlag.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: -12px -114px;
+}
+.China{
+    display: inline-block;
+    height: 17px;
+    width: 25px;
+    background-image: url(./worldMoviesImages/countriesFlag.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: -46px -180px;
+}
+.Korean{
+    display: inline-block;
+    height: 17px;
+    width: 25px;
+    background-image: url(./worldMoviesImages/countriesFlag.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: -48px -113.7px;
+}
+.Ghana{
+    display: inline-block;
+    height: 17px;
+    width: 25px;
+    background-image: url(./worldMoviesImages/countriesFlag.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: -83px -180px;
+}
+.Nigerian{
+    display: inline-block;
+    height: 17px;
+    width: 25px;
+    background-image: url(./worldMoviesImages/countriesFlag.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: -227px -13px;
+}
+.Brasilian{
+    display: inline-block;
+    height: 17px;
+    width: 25px;
+    background-image: url(./worldMoviesImages/countriesFlag.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: -13px -47px;
+}
+header{
+       height: 100vh;
+       width: 100vw;
+       padding: 0;
+       background-image: url(./worldMoviesImages/movie40.jpg);
+       background-repeat: no-repeat;
+       background-size: 100% 120%;
+       margin: 0;
+        margin-top: 50px;
+        color: rgb(185, 186, 204);
+        position: relative;
+}
+/* hide side scroll bar icon from the page and keep functionality */
+/* for chrome , opera and safari */
+::-webkit-scrollbar{
+     display: none;
+     width: 0;
+}
+.description{
+         width: 500px;
+         position: absolute;
+         top: 60%;
+         color: rgb(235, 245, 237);
+         font-size: 20px;
+         font-weight: bold;
+         letter-spacing: 3px;
+}
+.watch-now{
+           padding: 5px 20px;
+           background: rgb(221, 5, 5);
+           font-weight: bolder;
+           font-size: 18px;
+           border: none;
+           border-radius: 5px;
+           color: rgb(245, 245, 248);
+           margin-left: 10px;
+           margin-top: 10px;
+           transition: background-color 1s ;
+}
+.watch-now:active{
+  background-color: rgb(13, 13, 117);
+}
+.slide{
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      display: flex;
+      width: 100%;
+      height: 50px;
+      align-items: center;
+      justify-content: space-between;
+}
+.slide span:nth-child(1){
+          display: inline-block;
+          font-size: 30px;
+          padding: 3px 10px;
+          background: rgb(214, 214, 252);
+          color: rgb(83, 83, 83);
+          margin-left: 20px;
+          border-radius: 50%;
+          transition: opacity 0.5s;
+}
+
+.slide span:nth-child(2){
+          display: inline-block;
+          font-size: 30px;
+          padding: 3px 10px;
+           background: rgb(214, 214, 252);
+          color: rgb(83, 83, 83);
+          margin-right: 20px;
+          border-radius: 50%;
+          transition: opacity 0.5s;
+}
+.slide span:nth-child(1):active,.slide span:nth-child(2):active{
+      opacity: 0.3;
+}
+
+
+.caption{
+         width: 100%;
+         position: absolute;
+         bottom: 50px;
+         height: 50px;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+}
+.caption span{
+          display: inline-block;
+          height: 10px;
+          width: 10px;
+          border: 2px solid rgb(230, 223, 223);
+          border-radius: 50%;
+          margin-right: 5px;
+}
+.movies-container{
+          width: 100%;
+          margin-top: 300px;
+}
+.movies-container h1{
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+.movies-container h1::after{
+    display: inline-block;
+    content: "";
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(221, 5, 5);
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+.flex-container{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+}
+.flex-container > div{
+         width: 33%;
+         height: auto;
+         box-sizing: border-box;
+         margin-left: 0.3%;
+         margin-top: 40px;
+}
+img{
+       height:400px;
+       width: 400px;
+       display: block;
+       margin: auto;
+}
+.download{
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    height: auto;
+    color: rgb(219, 219, 253);
+    background-color: rgb(5, 182, 20);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+.download:active{
+     background-color: rgb(189, 5, 15);
+     cursor: pointer;
+     outline: none;
+}
+.download span{
+    display: inline-block;
+    text-align: center;
+}
+.blog{
+       margin: auto;
+       margin-top: 200px;
+       width: 100%;
+       background-color: rgb(13, 13, 13);
+       color: rgb(191, 190, 194);
+ }
+ .blog h1{
+        text-align: left;
+ }
+.blog-post{
+            color: rgb(162, 162, 167);
+            margin-top: 50px;
+            display: flex;
+            justify-content:space-between;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+}
+.blog-post h3{
+    text-align: center;
+    width: 100%;
+}
+.blog-post img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgb(0,0,0);
+}
+.rating{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: rgb(224, 221, 6);
+  padding-top: 30px;
+  font-size: 20px;
+}
+.blog-post p{
+       color: rgb(191, 190, 194);
+       text-align: justify;
+       padding: 0 10px;
+}
+.blog-post [name="comment"]{
+       background-color: rgb(81, 81, 83);
+       padding: 5px 0px;
+       font-size: 16px;
+       text-align: center;
+       border:none;
+       border-radius: 20px;
+       display:block;
+       width: 150px;
+       margin: auto;
+       margin-bottom: 20px;
+}
+.blog-post [name="comment"]:focus{
+   outline: none;
+   color: rgb(248, 246, 246);
+}
+.blog-post > div{
+    width: 30%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+.more-post{
+         width: 100%;
+         text-align: right;
+         color: rgb(10, 10, 201);
+}
+.subscribe{
+         margin-top: 200px;
+}
+.subscribe h1{
+            text-align: left;
+}
+.subscription-form{
+       width: 50%;
+         margin: auto;
+         margin-top: 50px;
+         background-color: rgb(15, 15, 15);
+         padding: 100px 20px 40px 20px;
+         border-radius: 10px;
+}
+.email,.password{
+       background-color: rgb(148, 148, 150);
+       padding-left: 5px;
+       color: rgb(0,0,0);
+       font-size: 20px;
+        border-radius: 10px;
+}
+.password{
+          margin-top: 50px;
+}
+.email input,.password input{
+       padding: 10px 3px;
+       width: 90%;
+       border: none;
+       background-color: inherit;
+       font-size: 16px;
+}
+.email input:focus,.password input:focus{
+    cursor: pointer;
+    outline: none;
+    color: rgb(61, 60, 61);
+}
+.subscribe-btn{
+      color: rgb(185, 186, 204);
+      background-color: rgb(189, 5, 15);
+      border: none;
+      padding: 8px 0 8px 0;
+      width: 150px;
+      display: block;
+      margin: auto;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 50px;
+      font-size: 20px;
+      transition: opacity 0.5s;
+}
+.subscribe-btn:active,.subscribe-btn:hover{
+        outline: none;
+}
+.subscribe-btn:active{
+          opacity: 0.5;
+}
+footer{
+        background-color: rgb(34, 33, 33);
+}
+.footer-container{
+       margin-top: 200px;
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+}
+.footer-container > div {
+         width: 33%; 
+}
+.follow-us > div{
+      margin-left: 30%;
+      width: 70%;
+}
+.fa-facebook{
+       font-size: 40px;
+       color: rgb(26, 6, 211);
+       background-color: rgb(185, 186, 204);
+       border-radius: 50%;
+       padding: 0;
+}
+.fa-twitter{
+         color: rgb(54, 192, 247);
+        font-size: 40px;
+       border-radius: 50%;
+       padding-left: 10px;
+}
+.fa-instagram{
+         color: rgb(184, 101, 7);
+        font-size: 40px;
+       padding-left: 10px;
+}
+.fa-telegram{
+         color: rgb(93, 109, 253);
+        font-size: 40px;
+        margin-top: 20px;
+}
+.fa-linkedin{
+         color: rgb(93, 109, 253);
+        font-size: 40px;
+        margin-top: 20px;
+        background-color: rgb(215, 215, 250);
+        margin-left: 10px;
+}
+.fa-whatsapp{
+         color: rgb(18, 206, 11);
+        font-size: 40px;
+        margin-top: 20px;
+        margin-left: 10px;
+}
+.about-us > ul{
+        list-style-type: square;
+        list-style-position: inside;
+        margin-left: 10%;
+}
+.about-us li{
+      margin-top: 10px;
+      color: rgb(207, 197, 252);
+      transition:  color 0.5s;
+}
+.about-us li:hover{
+          color: rgb(26, 6, 211);
+          cursor: pointer;
+          outline: none;
+}
+.playstore{
+         display: block;
+         margin: auto;
+         background-image: 
+         url(./worldMoviesImages/playstore.jpg);
+         height: 45px;
+         width: 200px;
+         background-repeat: no-repeat;
+         background-size: 200px 100px;
+         background-position-y:-56px  ;
+         border-radius: 10px;
+}
+.applestore{
+         display: block;
+         margin: auto;
+         margin-top: 30px;
+         background-image: 
+         url(./worldMoviesImages/playstore.jpg);
+         height: 45px;
+         width: 200px;
+         background-repeat: no-repeat;
+         background-size: 200px 100px;
+         background-position-y:-1px ;
+         border-radius: 10px;
+}
+.copyright{
+      width: 100%;
+      text-align: center;
+      font-size: 15px;
+      color: rgb(122, 121, 122);
+      font-style: italic;
+      margin-top: 100px;
+      margin-bottom: 0;
+      padding-bottom: 10px;
+}
+/* login page style */
+form{
+     margin: auto;
+     margin-top: 300px;
+     display: block;
+     width: 50%;
+      border: 2px solid rgb(3, 114, 36);
+      height: auto;
+      border-radius: 10px;
+}
+.login-email, .login-password{
+       display: block;
+       width: 60%;
+       margin: auto;
+       margin-top: 70px;
+       border-bottom: 2px solid   rgb(3, 114, 36);;
+}
+.login-email .fa-envelope,.login-password .fa-lock{
+         width: 10%;
+         font-size: 25px;
+         color: rgb(178, 173, 253);
+}
+.login-email input,.login-password input{
+        width: 80%;
+        font-size: 18px;
+        background-color: transparent;
+        border: none;      
+        color: rgb(185, 186, 204);
+}
+.login-email input:focus,.login-password input:focus{
+      outline: none;
+      color: rgb(185, 186, 204);
+}
+#user{
+      font-size: 40px;
+      padding: 20px 0 20px 0;
+      background-color: rgb(6, 141, 24);
+      border-radius: 50%;
+      width: 80px;
+      text-align: center;
+      display: block;
+      margin: auto;
+      margin-top: 80px;
+
+} 
+.email-error,.password-error{
+      font-family: serif;
+      padding-left: 5px;
+      font-size: 15px;
+      color: rgb(189, 5, 15);
+      margin-top: 5px;
+}
+.no-account{
+       margin-left: 5px;
+       margin-top: 100px;
+}
+.sign{
+       font-size: 18px;
+       display: inline-block;
+       margin-left: 10px;
+       color: rgb(84, 46, 250);
+       border-bottom: 1px solid  rgb(84, 46, 250);
+       text-align: center;
+}
+.login-btn{
+      color: rgb(197, 197, 247);
+      background-color: rgb(2, 107, 11);
+      border: none;
+      padding: 8px 0 8px 0;
+      width: 200px;
+      display: block;
+      margin: auto;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 50px;
+      font-size: 20px;
+      transition: opacity 0.5s;
+      margin-bottom: 20px;
+}
+.login-btn:active{
+     outline: none;
+     opacity: 0.5;
+}
+.login-btn:visited{
+   outline: none;
+}
+/* animation to be displayed in the error messege that pop up to the user in the login form 
+   the animation name was set to the elements (error messeges) in javascript */
+  @keyframes  change-color {
+          0%{color: rgb(216, 11, 4);}
+          100%{color: rgb(10, 10, 10);}
+   }
+   /* mobile responsive */ 
+   @media  screen and (max-width:480px) {
+         nav{
+                   justify-content: space-between;
+                   width: 100%;
+                   display: flex;
+                   height: 40px;
+
+         }
+         h1,h2{
+     font-size: 18px;
+     width: 98%;
+     margin-left: 2%;
+}
+            nav > div{
+               width: 150px;
+               margin-right: 15px;
+            }  
+             nav > div a{
+                    font-size: 15px;
+                    display: none;
+             }
+             .fa-bars{
+                    font-size: 18px;
+                    width: 40px;
+                    padding: 0;
+             }
+             input[type="search"]{
+          background: rgb(185, 186, 204);
+          padding: 2px;
+          border-radius: 2px;
+          color: rgb(0,0,0);
+           border: none;
+          outline: none;
+          font-size: 12px;
+          width: 150px;
+          }
+          .sidebar{
+                width: 100%;
+                background-color: rgb(19, 18, 19);
+          }
+          .close{
+             font-size: 30px;
+             top: -5px;
+          }
+          .fa-globe{
+                 font-size: 30px;
+          }
+          .sidename{
+              font-size: 16px;
+          }
+          @keyframes slide {
+                  from{width: 0%;}
+                  to{width: 100%;}
+       }
+       .sidebar-header{
+                 height: 100px;
+                background-color: rgb(50, 5, 141);
+               position: relative;
+          }
+          .categories ul{
+    font-size: 16px;
+    line-height: 40px;
+}
+     header{
+       height: 80vh;
+       width: 100vw;
+       padding: 0;
+       margin-top: 40px;
+       background-size: 100% 100%;
+}
+.slide span:nth-child(1){
+          display: inline-block;
+          font-size: 25px;
+          background-color: transparent;
+          color: rgb(228, 240, 250);
+          margin-left: 10px;
+          transition: opacity 0.5s;
+}
+
+.slide span:nth-child(2){
+          display: inline-block;
+          font-size: 25px;
+          background-color: transparent;
+          color: rgb(228, 240, 250);
+          margin-right: 20px;
+          transition: opacity 0.5s;
+}   
+.caption{
+    bottom: 5px;
+}
+.description{
+         width: 260px;
+         font-size: 13px;
+         font-weight: normal;
+}
+.watch-now{
+           padding: 5px 10px;
+           font-weight: normal;
+           font-size: 16px;
+}
+.mobile-navbar{
+    width: 100%;
+    height: 40px;
+    background: rgb(2, 80, 8);
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+     white-space: nowrap;
+    overflow-x: scroll;
+}
+.mobile-navbar a{
+       font-size: 15px;
+       text-align: center;
+       text-decoration: none;
+       color: rgb(214, 214, 252);
+       transition: color 1s;
+       display: inline-block;
+       margin-right: 2%;
+       margin-left: 1%;
+       width: 22%;
+}
+a:hover{
+      color: rgb(5, 182, 20);
+}
+.movies-container{
+          width: 100%;
+          margin-top: 100px;
+}
+.movies-container h1{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.flex-container{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+}
+.flex-container > div{
+         width: 100%;
+         height: auto;
+         box-sizing: border-box;
+         margin-top: 20px;
+}
+img{
+       height:200px;
+       width: 200px;
+       display: block;
+       margin: auto;
+}
+
+.download{
+    display: block;
+    width: 55%;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+.download span{
+    display: inline-block;
+    text-align: right;
+    margin-left: 10px;
+}
+blog{
+       margin: auto;
+       margin-top: 100px;
+       width: 100%;
+       background-color: rgb(13, 13, 13);
+       color: rgb(191, 190, 194);
+ }
+ .blog h1{
+         font-size: 20px;
+        text-align: left;
+ }
+.blog-post{
+            color: rgb(162, 162, 167);
+            margin-top: 50px;
+            display: flex;
+            justify-content:flex-start;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+}
+.blog-post h3{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+.blog-post img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgb(0,0,0);
+}
+.rating{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: rgb(224, 221, 6);
+  padding-top: 30px;
+  font-size: 20px;
+}
+.blog-post p{
+       color: rgb(191, 190, 194);
+       text-align: center;
+       padding: 0 4%;
+       font-size: 13px;
+       width: 90%;
+}
+
+.blog-post > div{
+     width: 80%;
+      display: block;
+      margin: auto;
+    background-color: rgb(27, 27, 27);
+    margin-bottom: 30px;
+}
+.more-post{
+         width: 100%;
+         text-align: right;
+         padding-right: 0px;
+         color: rgb(10, 10, 201);
+         overflow: hidden;
+}
+.subscribe{
+         margin-top: 100px;
+}
+.subscribe h1{
+             font-size: 20px;
+            text-align: left;
+}
+.subscription-form{
+       width: 80%;
+         margin: auto;
+         margin-top: 50px;
+         background-color: rgb(15, 15, 15);
+         padding: 80px 10px 40px 10px;
+         border-radius: 10px;
+}
+.email,.password{
+       background-color: rgb(148, 148, 150);
+       padding-left: 5px;
+       color: rgb(0,0,0);
+       font-size: 15px;
+        border-radius: 10px;
+}
+.password{
+          margin-top: 50px;
+}
+.email input,.password input{
+       padding: 5px 3px;
+       width: 70%;
+       font-size: 12px;
+}
+.subscribe-btn{
+      padding: 5px 0 5px 0;
+      width: 200px;
+      margin-top: 50px;
+      font-size: 16px;
+   
+   }
+   .footer-container{
+       margin-top: 200px;
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+}
+.footer-container > div {
+         width: 100%; 
+}
+.follow-us > div{
+      margin-left: 30%;
+      width: 70%;
+}
+.copyright{
+    font-size: 10px;
+}
+/* login page style */
+form{
+    margin: auto;
+     margin-top: 300px;
+     display: block;
+     width: 90%;
+      border: 1px solid rgb(3, 114, 36);
+}
+.login-email, .login-password{
+       display: block;
+       width: 90%;
+       margin: auto;
+       margin-top: 50px;
+       border-bottom: 2px solid   rgb(3, 114, 36);
+}
+.login-email .fa-envelope,.login-password .fa-lock{
+         width: 10%;
+         font-size: 18px;
+}
+.login-email input,.login-password input{
+        width: 80%;
+        font-size: 13px;
+}
+.no-account{
+      font-size: 15px;
+}
+            }
+ /* for tablet devices */
+   @media  screen and (min-width:500px)and (max-width:700px){
+nav{
+   position: fixed;
+   width: 100%;
+   overflow-x: scroll;
+}
+ nav > div{
+   font-size: 18px;
+   width: 80%;
+   display: flex;
+   align-items: center;
+   margin-right: 5px;
+}
+nav > div a{
+       font-size: 16px;
+       text-decoration: none;
+       color: rgb(214, 214, 252);
+       padding: 0 5px;
+       margin-right: 10px;
+       transition: color 1s;
+
+}
+.fa-bars{
+        font-size: 20px;
+        width: 10%;
+}
+input[type="search"]{
+          display: inline-block;
+          background: rgb(185, 186, 204);
+          padding: 3px;
+          width: 150px;
+          border-radius: 2px;
+          font-size: 15px;
+          margin-left: -10px;
+          padding-left: 0;
+          text-align: center;
+          }
+.sidebar{
+         display: none;
+         height: 100vh;
+         width: 50%;
+         animation: slide 0.8s ; 
+}
+@keyframes slide {
+       from{width: 0%;}
+       to{width: 50%;}
+}
+.sidebar-header{
+      height: 200px;
+      background-color: rgb(50, 5, 141);
+      position: relative;
+}
+.close{
+     position: absolute;
+     top: -5px;
+     right: 0;
+     font-size: 30px;
+     padding-right: 5px;
+     height: 40px;
+}
+.slide span:nth-child(1){
+          display: inline-block;
+          font-size: 30px;
+          background-color: transparent;
+          color: rgb(228, 240, 250);
+          margin-left: 10px;
+          transition: opacity 0.5s;
+}
+
+.slide span:nth-child(2){
+          display: inline-block;
+          font-size: 30px;
+          background-color: transparent;
+          color: rgb(228, 240, 250);
+          margin-right: 20px;
+          transition: opacity 0.5s;
+}
+.flex-container{
+          justify-content: space-around;
+          width: 100%;
+}
+.flex-container > div{
+         width: 48%;
+         height: auto;
+         box-sizing: border-box;
+         margin-top: 40px;
+}
+img{
+       height:250px;
+       width: 250px;
+       display: block;
+       margin: auto;
+}
+.download{
+    width: 50%;
+    font-size: 18px;
+}
+.blog-post > div{
+    margin: auto;
+    width: 60%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+h1,h2{
+     font-size: 20px;
+     width: 98%;
+     margin-left: 2%;
+}
+.subscription-form{
+       width: 70%;
+         margin: auto;
+         margin-top: 50px;
+}
+.password{
+          margin-top: 70px;
+}
+.subscribe-btn{
+      width: 200px;
+      margin-top: 50px;
+      font-size: 17px;
+}
+.footer-container > div {
+         width: 50%; 
+}
+.copyright{
+  font-size: 13px;
+}
+form{
+     width: 80%;
+}
+.login-email .fa-envelope,.login-password .fa-lock{
+         font-size: 18px;
+}
+.login-email input,.login-password input{
+        font-size: 15px;
+}
+.login-btn{
+      width: 300px;
+}
+      }
