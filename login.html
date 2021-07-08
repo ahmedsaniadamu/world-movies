@@ -1,0 +1,210 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="best online movie website">
+    <meta name = "author" content="AHMED SANI ADAMU">
+    <title>login page</title>
+
+  <!-- custom style sheet-->
+
+      <link rel="stylesheet" href="./style.css">
+
+      <!-- *****  google font ***** -->
+
+      <link rel="stylesheet" 
+            href="https://fonts.googleapis.com/css?family=Oswald|Audiowide&effect=fire">
+</head>
+<body>
+
+
+  <!-- html5 semantic elements   -->
+
+    <!-- home about login and contact are for desktop view only
+                 they are hided in media query mobile view   -->
+
+        <nav class="nav-bar">
+           <span class="fa fa-bars"></span>
+          <div class="right-item">
+                    <a href="./index.html" class="home"><i class="fas fa-home"></i> Home</a>
+                     <a href="#" class="about">   About</a>
+                     <a href="#" class="contact"> Contact</a>
+                     <a href="#" class="login">  login</a>
+                     <input type="search" name="search" placeholder="&#128269 search movie" />
+          </div>
+        </nav>
+
+        <!-- side bar which is hided by default-->
+
+        <aside class="sidebar">
+             <div class="sidebar-header">
+                   <span class="close">&times</span>
+                  <span class="fas fa-globe"></span>
+                  <p class="sidename">worldmovies.com</p>
+             </div>
+                <div class="categories"> 
+                  <h1>Categories</h1>
+                   <ul>
+                     <li> <span class="fas fa-angle-right"></span> New videos</li>
+                     <li> <span class="fas fa-angle-right"></span> Popular videos</li>
+                     <li> <span class="fas fa-angle-right"></span> Most downloaded videos</li>
+                     <li> <span class="fas fa-angle-right"></span> Latest videos</li>
+                  </ul>
+             </div>
+              <div class="categories"> 
+                  <h1><span class="fas fa-sort-alpha-down"></span> Videos</h1>
+                   <ul>
+                     <li> <span class="American"></span>  American movies</li>
+                     <li> <span class="Indian"></span> Indian Movies</li>
+                     <li> <span class="Japanese"></span> Japanese Movies</li>
+                     <li> <span class="China"></span> China Movies</li>
+                     <li> <span class="Korean"></span> Korean Movies</li>
+                     <li> <span class="Ghana"></span> Ghana Movies</li>
+                     <li> <span class="Nigerian"></span> Nigerian Movies</li>
+                     <li> <span class="Brasilian"></span> Brasilian Movies</li>
+        </aside>
+      <header class="main header">
+         <div class="description">  
+                  download or watch HD  movies for free at 
+                  worldmovies.com  <button class="watch-now">Watch Now <span class="fas fa-play-circle"></span></button>     
+          </div>
+          <div class="slide">
+               <span class="fas fa-angle-left left"></span>
+               <span class="fas fa-angle-right right"></span>
+
+          </div>
+          <div class="caption">
+                    <span class="caption1"></span>
+                    <span class="caption2"></span>
+                     <span class="caption3"></span>
+          </div>
+      </header>
+
+       <!-- below div is the mobile view botom navigation bar   -->
+
+        <div class="mobile-navbar">
+              <a href="./index.html" class="home"><i class="fas fa-home"></i> Home</a>
+                     <a href="#" class="about">   About</a>
+                     <a href="#" class="contact"> Contact</a>
+                     <a href="./login.html" class="login">  login</a>
+                     
+        </div>
+       <section class="login-form">
+
+          <form action="worldMovies-database.php" autocomplete="on" method="POST">
+                <span class="fas fa-user" id="user"></span>
+                <br>
+                <div class="login-email">
+                      <label for="mail" class="fas fa-envelope"></label>
+                      <input type="email" name="" id="mail" placeholder="email address">
+                </div>
+                <p class="email-error"></p>
+                <div class="login-password">
+                         <label for="pin" class="fas fa-lock"></label>
+                         <input type="password" maxlength="8" name="password" id="pin" placeholder="password">
+                    </div>
+                    <p class="password-error"></p>
+                    <div class="no-account">
+                         <p>don't have an account ?   <span class="sign">sign up</span></p> 
+                    </div>
+                    <button type="submit" class="login-btn">login</button>
+                </form>
+                
+        </section>
+          
+    <article class="blog">
+        <h1>Reviews from our blog</h1>
+             <div class="blog-post">
+                <div class="person-1">
+                     <h3>Janeth</h3>
+                    <img src="./worldMoviesImages/janeth.jpg"   
+                     alt="janeth image" id="janeth">
+                       <span class="rating">&#9733 &#9733 &#9733 &#9734 &#9734</span>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Dolore, molestias tenetur veritatis neque ex hic blanditiis
+                         voluptas ad cupiditate tempora quis id numquam similique 
+                         nesciunt libero ratione optio corporis asperiores.</p>
+                         <input type="text" name="comment" placeholder="comment...">
+                </div>
+                <div class="person-2">
+                     <h3>Gomez</h3>
+                    <img src="./worldMoviesImages/gomez.jpg"   
+                     alt="janeth image" id="janeth">
+                     <span class="rating">&#9733 &#9733 &#9734 &#9734 &#9734</span>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Dolore, molestias tenetur veritatis neque ex hic blanditiis
+                         voluptas ad cupiditate tempora quis id numquam similique 
+                         nesciunt libero ratione optio corporis asperiores.</p>
+                         <input type="text" name="comment" placeholder="comment...">
+                </div>
+                <div class="person-3">
+                     <h3>Ahmed Sani</h3>
+                    <img src="./worldMoviesImages/sani.png"   
+                     alt="janeth image" id="janeth">
+                     <span class="rating">&#9733 &#9733 &#9733 &#9733 &#9733</span>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Dolore, molestias tenetur veritatis neque ex hic blanditiis
+                         voluptas ad cupiditate tempora quis id numquam similique 
+                         nesciunt libero ratione optio corporis asperiores.</p>
+                         <input type="text" name="comment" placeholder="comment...">
+                </div>
+             
+             </div>
+             <p class="more-post">more posts</p>
+    </article>
+      <section class="subscribe">
+               <h1>Subscribe for our latest video update.</h1>
+               <div class="subscription-form">
+                     <div class="email">
+                        <label for="mail" class="far fa-envelope"></label>
+                         <input type="email" name="subscribe" id="mail" placeholder="email">       
+                    </div>
+                    <div class="password">
+                         <label for="pin" class="fas fa-lock"></label>
+                         <input type="password" maxlength="8" name="password" id="pin" placeholder="password">
+                    </div>
+                     <button class="subscribe-btn"><span class="fas fa-share"></span> Subscribe</button>
+               </div>
+      </section>
+<footer>
+     <div class="footer-container">
+           <div class="follow-us">
+                   <h2>Follow us</h2>
+                   <div class="social-media">
+                       <span class="fab fa-facebook"></span>
+                       <span class="fab fa-twitter"></span>
+                       <span class="fab fa-instagram"></span>
+                       <br>
+                       <span class="fab fa-telegram"></span>
+                       <span class="fab fa-linkedin"></span>
+                       <span class="fab fa-whatsapp"></span>
+                   </div>
+           </div>
+           <div class="about-us">
+            <h2>About us</h2>
+                      <ul>
+                           <li>pivacy policy</li>
+                           <li>advertise with us</li>
+                           <li>terms and conditions</li>
+                           <li>upload your own videos</li>
+                           <li>check for upcoming movies</li>
+                      </ul>
+           </div>
+           <div class="download-app">
+           <h2>Download our app on</h2>
+                  <div class="playstore"></div>
+                  <div class="applestore"></div>
+           </div>
+</div>
+ <div></div>
+       <p class="copyright"> copyright &copy 2021 worldMovies all right reserved</p>
+
+              <!-- font awesome icons -->
+
+      <script src="https://kit.fontawesome.com/9ee600ba89.js"></script>
+       <script  src="./loginFormValidation.js"></script>
+    <script  src="./script.js"></script>    
+</body>
+</html>
