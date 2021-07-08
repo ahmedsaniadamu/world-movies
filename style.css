@@ -2,6 +2,7 @@
      the website content is responsive based on device screen dimension
      (mobile devices , desktop computers, tablet phones) 
 */
+
 :root,:root::after,:root::before{
        box-sizing: border-box;
        scrollbar-width: none;
@@ -12,8 +13,11 @@ body{
       color: rgb(215, 215, 250);
        overflow-x: hidden;
        font-family: Oswald,sans-serif;
+
        /* hide side scroll bar icon from the page and keep functionality */
-/* for chrome , internet explorer edge and firefox */
+
+      /* for chrome , internet explorer edge and firefox */
+
         -ms-overflow-style: none;
         margin: 0;
        padding: 0;
@@ -33,7 +37,9 @@ nav{
      white-space: nowrap;
      z-index: 5;
 }
+
 /* hide mobile nav bar in desktop view */
+
 .mobile-navbar{
       display: none;
 }
@@ -236,7 +242,7 @@ header{
        height: 100vh;
        width: 100vw;
        padding: 0;
-       background-image: url(./worldMoviesImages/movie40.jpg);
+       background-image: url(./worldMoviesImages/movie49.jpg);
        background-repeat: no-repeat;
        background-size: 100% 120%;
        margin: 0;
@@ -244,8 +250,10 @@ header{
         color: rgb(185, 186, 204);
         position: relative;
 }
+
 /* hide side scroll bar icon from the page and keep functionality */
 /* for chrome , opera and safari */
+
 ::-webkit-scrollbar{
      display: none;
      width: 0;
@@ -365,8 +373,8 @@ header{
          margin-top: 40px;
 }
 img{
-       height:400px;
-       width: 400px;
+       height:300px;
+       width: 300px;
        display: block;
        margin: auto;
 }
@@ -380,7 +388,7 @@ img{
     font-size: 20px;
     height: auto;
     color: rgb(219, 219, 253);
-    background-color: rgb(5, 182, 20);
+    background-color: rgb(3, 146, 15);
     border: none;
     border-radius: 5px;
     transition: background-color 0.5s;
@@ -626,7 +634,9 @@ footer{
       margin-bottom: 0;
       padding-bottom: 10px;
 }
+
 /* login page style */
+
 form{
      margin: auto;
      margin-top: 300px;
@@ -640,7 +650,7 @@ form{
        display: block;
        width: 60%;
        margin: auto;
-       margin-top: 70px;
+       margin-top: 50px;
        border-bottom: 2px solid   rgb(3, 114, 36);;
 }
 .login-email .fa-envelope,.login-password .fa-lock{
@@ -700,7 +710,7 @@ form{
       margin: auto;
       text-align: center;
       border-radius: 10px;
-      margin-top: 50px;
+      margin-top: 40px;
       font-size: 20px;
       transition: opacity 0.5s;
       margin-bottom: 20px;
@@ -712,13 +722,17 @@ form{
 .login-btn:visited{
    outline: none;
 }
+
 /* animation to be displayed in the error messege that pop up to the user in the login form 
    the animation name was set to the elements (error messeges) in javascript */
+
   @keyframes  change-color {
           0%{color: rgb(216, 11, 4);}
           100%{color: rgb(10, 10, 10);}
    }
+
    /* mobile responsive */ 
+
    @media  screen and (max-width:480px) {
          nav{
                    justify-content: space-between;
@@ -1005,7 +1019,9 @@ blog{
 .copyright{
     font-size: 10px;
 }
+
 /* login page style */
+
 form{
     margin: auto;
      margin-top: 300px;
@@ -1013,11 +1029,14 @@ form{
      width: 90%;
       border: 1px solid rgb(3, 114, 36);
 }
+#user{
+     margin-top: 50px;
+}
 .login-email, .login-password{
        display: block;
        width: 90%;
        margin: auto;
-       margin-top: 50px;
+       margin-top: 30px;
        border-bottom: 2px solid   rgb(3, 114, 36);
 }
 .login-email .fa-envelope,.login-password .fa-lock{
@@ -1030,10 +1049,16 @@ form{
 }
 .no-account{
       font-size: 15px;
+      margin-top: 40px;
+}
+.login-btn{
+     margin-top: 30px;
 }
             }
+
  /* for tablet devices */
-   @media  screen and (min-width:500px)and (max-width:700px){
+
+   @media  screen and (min-width:500px)and (max-width:770px){
 nav{
    position: fixed;
    width: 100%;
